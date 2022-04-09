@@ -1,0 +1,153 @@
+<!--Defines Html Version which i used is HTML5-->
+<!DOCTYPE html>
+<!--Defines the language of the document-->
+<html lang="en">
+<!--Defines the head of the document-->
+
+<head>
+    <!--Defines the character set(UTF-8) of the document-->
+    <meta charset="UTF-8">
+    <!--Defines compatibility with Internet Explorer-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Defines the viewport of the document-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Defines the title of the document-->
+    <title>Form Object</title>
+
+</head>
+<!--Defines the body of the document-->
+
+<body>
+    <!--creating select option to display favroite fruit -->
+    <form>
+
+        <select name="fruit">
+                <option value="0">Select Fruit </option>
+                <option value="apple">apple</option>
+                <option value="banana">banana</option>
+                <option value="orange">orange</option>
+            </select>
+
+        <input type="button" class="select" value="select" onclick="optionfruit(this.form.fruit);">
+        <p id="fav"></p>
+
+
+    </form>
+    <p class="p">Press <kbd> CTRL + U</kbd> to view code for pc <br>
+        <!--code to download code into mobile in text format -->
+        <button type="button" class="btn">
+            <a class="a" href="data.txt"> Download</a>
+        </button>
+    </p>
+    <script>
+        //function to display selected fruit
+        function optionfruit(select) {
+            //getting the selected fruit
+            var selected = select.options[select.selectedIndex].value;
+            //displaying the selected fruit
+            if (selected == "apple") {
+                //displaying the selected fruit o id fav
+                document.getElementById("fav").innerHTML = "<p>You selected <h2>apple</h2>..</p> ";
+            } else if (selected == "banana") {
+                document.getElementById("fav").innerHTML = "<p>You selected <h2>banana</h2>..</p>";
+            } else if (selected == "orange") {
+                document.getElementById("fav").innerHTML = "<p>You selected <h2>orange</h2>..</p>";
+            } else {
+                document.getElementById("fav").innerHTML = "You did not select a fruit?";
+            }
+        }
+    </script>
+
+    <style>
+        /*universal selector */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            /* give background for body using colors*/
+            background-image: linear-gradient(50deg, #5fe237, rgb(42, 72, 243));
+            /* give 100 viewheight on body*/
+            height: 100vh;
+        }
+        
+        form {
+            justify-items: center;
+            align-items: center;
+            margin: 10rem;
+            margin-top: 30px;
+            height: 250px;
+            width: 250px;
+            background-color: #fff;
+            border-radius: 20px;
+            justify-content: center;
+            box-shadow: #fff 0px 0px 20px;
+        }
+        
+        select {
+            margin: 30px;
+            padding: 10px;
+            background-color: #348aec;
+            color: #fff;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 20px;
+        }
+        
+        select:hover {
+            background-color: #fff;
+            color: limegreen;
+            box-shadow: limegreen;
+        }
+        
+        option {
+            background-color: rgb(73, 91, 248);
+            color: #fff;
+            border-radius: 20px;
+        }
+        
+        .select {
+            margin: 30px;
+            height: 40px;
+            width: 80px;
+            border-radius: 15px;
+            color: #fff;
+            background-color: rgb(83, 101, 255);
+        }
+        
+        .select:hover {
+            background-color: #fff;
+            color: rgb(0, 226, 30);
+        }
+        
+        #fav {
+            color: limegreen;
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .p {
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        .btn {
+            margin-left: 10px;
+            padding: 10px;
+            background-color: rgb(83, 101, 255);
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .btn .a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+</body>
+
+</html>
