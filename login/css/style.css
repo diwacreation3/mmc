@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.5), rgba(0, 0, 0, 0.5)), url('/img/back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+}
+
+.form {
+    border-radius: 25px;
+    background: #fff;
+    height: 400px;
+    width: 350px;
+    justify-content: space-between;
+    opacity: 0.899;
+    background-image: linear-gradient(45deg, rgb(252, 154, 89), rgb(250, 86, 187));
+}
+
+.form1 {
+    border-radius: 25px;
+    background: #fff;
+    height: 600px;
+    width: 450px;
+    justify-content: space-between;
+    background-image: linear-gradient(45deg, rgb(252, 154, 89), rgb(250, 86, 187));
+    opacity: 0.899;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+}
+
+input {
+    padding: 12px;
+    margin: 9px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 10px #fff;
+}
+
+.submit {
+    box-shadow: none;
+    width: 40%;
+    background: transparent;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid royalblue;
+}
+
+.submit:hover {
+    background: royalblue;
+    color: #fff;
+    transition: 1.5s;
+}
+
+button {
+    padding: 10px;
+    margin: 9px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background: transparent;
+    border: 2px solid limegreen;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: limegreen;
+    transition: 1.5s;
+}
+
+.footer {
+    color: limegreen;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.social img {
+    margin-left: -200px;
+    margin-top: 20px;
+}
