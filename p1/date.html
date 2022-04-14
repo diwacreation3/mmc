@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Display Current Date and Time </title>
+</head>
+
+<body>
+    <h1> Current date using JavaScript.</h1>
+    <div class="content">
+        <p id="day"></p>
+        <p id="date"></p>
+        <p class="twist">Twist By
+            <a href="https://diwakar-phuyal.cf">Diwakar Phuyal</a>
+        </p>
+    </div>
+    <button><a href="file.txt">Download Code</a></button>
+    <marquee behavior="scroll" direction="left">
+        <h2>Happy New Year 2079 BS Happy New Year 2079 BS Happy New Year 2079 BS </h2>
+    </marquee>
+</body>
+<script type="text/javascript">
+    var today = new Date();
+    var day = today.getDay();
+    var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday ", "Thursday", "Friday", "Saturday"];
+    var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var dateTime = date + ' ' + time;
+
+    document.getElementById("day").innerHTML = ' <br> Today is:- ' + daylist[day];
+    document.getElementById("date").innerHTML += '<br> Year:- ' + date + ' <br>Time:- ' + time;
+</script>
+<style>
+    h1 {
+        text-align: center;
+        color: limegreen;
+    }
+    
+    .content {
+        text-align: center;
+        align-items: center;
+        font-size: 20px;
+        font-family: sans-serif;
+        height: 220px;
+        margin-left: 150px;
+        width: 220px;
+        border: 1px solid royalblue;
+        border-radius: 20px;
+        box-shadow: 0px 0px 0px 2px black;
+        background-image: linear-gradient(45deg, rgb(248, 7, 176), rgb(247, 232, 15));
+    }
+    
+    #day {
+        color: #fff;
+        font-size: 22px;
+    }
+    
+    #date {
+        color: #fff;
+    }
+    
+    .twist {
+        color: #fff;
+        font-size: 15px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    a:hover {
+        transition-delay: ms;
+        font-size: 18px;
+    }
+    
+    button {
+        padding: 16px;
+        background-color: limegreen;
+        border: none;
+        border-radius: 20px;
+    }
+    
+    h2 {
+        background-image: linear-gradient(45deg, rgb(248, 7, 176), rgb(247, 232, 15));
+        color: #fff;
+        animation-direction: reverse;
+        width: 100%;
+    }
+</style>
+
+</html>
